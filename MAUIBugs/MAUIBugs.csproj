@@ -59,10 +59,23 @@
 	  <Compile Update="Pages\BorderBugPage.xaml.cs">
 	    <DependentUpon>BorderBugPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="ShellNavBugOne\FirstPage.xaml.cs">
+	    <DependentUpon>FirstPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ShellNavBugOne\SettingsPage.xaml.cs">
+	    <DependentUpon>SettingsPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Pages\BorderBugPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ShellNavBugOne\FirstPage.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ShellNavBugOne\SettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

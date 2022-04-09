@@ -8,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new BorderBugPage();
+		MainPage = new ShellNavBugOne.ShellNavigationBug1();
 	}
 }

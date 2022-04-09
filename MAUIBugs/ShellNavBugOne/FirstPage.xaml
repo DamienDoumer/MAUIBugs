@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIBugs.ShellNavBugOne.FirstPage">
+
+    <!--NOTE: The bug disappears once you remove this title view-->
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="First"
+                   VerticalOptions="Start"
+                   Margin="0,0,0,10"/>
+        </Grid>
+    </Shell.TitleView>
+    
+    <Grid>
+        <Button Text="Navigate to settings page"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="NavigateClicked"/>
+    </Grid>
+    
+</ContentPage>
