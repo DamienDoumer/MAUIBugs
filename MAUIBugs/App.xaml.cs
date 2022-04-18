@@ -8,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new ViewSizeReferenceBug.SizeReferenceBug();
+		MainPage = new ViewSizeReferenceBug.SizeReferenceBug2();
 	}
 }
